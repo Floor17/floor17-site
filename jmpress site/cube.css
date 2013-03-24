@@ -4,7 +4,7 @@ body {
 	min-height: 740px;
 	background-image: url('grad.jpg');
 	-webkit-font-smoothing: antialiased;
-	pointer-events: none;
+	
 }
 
 /** STEP STYLES **/
@@ -35,8 +35,7 @@ input {
 	font-size: 50px;
 }
 #back {
-	width: 4000px;
-    height: 4000px;
+	
 	background-image:url('office1.jpg');
 	background-size:contain;
 }
@@ -44,7 +43,7 @@ input {
 	background-color:rgba(0,0,0,0);
 	border: none;
 }
-#floor {
+#floor2 {
 	width: 4000px;
     height: 4000px;
 }
@@ -57,4 +56,17 @@ input {
 	width: 700px;
     height: 400px;
 }
+#desk {
+	width: 6000px;
+    height: 2000px;
+    pointer-events: none;
+
+}
+
+/** ANIMATION **/
+
+
+
+.step { opacity: 0.5; }
+.step.nested-active, .step.active, .step.active .step { opacity: 1 }
 }
